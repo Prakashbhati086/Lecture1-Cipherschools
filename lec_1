@@ -1,0 +1,15 @@
+objects and Classes in Java
+
+objects=
+AnA Java object is a member (also called an instance) of a Java class. Each object has an identity, a behavior and a state.
+
+The state of an object is stored in fields (variables), while methods (functions) display the object's behavior. Objects are created at runtime from templates, which are also known as classes.
+
+class=
+A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity. It can't be physical.
+A class in Java can contain:
+    ->Fields
+    ->Methods
+    ->Constructors
+    ->Blocks
+    ->Nested class and interface
