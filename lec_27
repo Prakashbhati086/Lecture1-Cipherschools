@@ -1,0 +1,30 @@
+public class TwoPointerExample {
+    public static boolean isPairSumPresent(int[] arr, int target) {
+        int left = 0;
+        int right = arr.length - 1;
+        
+        while (left < right) {
+            int sum = arr[left] + arr[right];
+            
+            if (sum == target) {
+                return true; // Pair with given sum is found
+            } else if (sum < target) {
+                left++; // Move the left pointer to increase the sum
+            } else {
+                right--; // Move the right pointer to decrease the sum
+            }
+        }
+        
+        return false; // Pair with given sum is not found
+    }
+    
+    public static void main(String[] args) {
+        int[] arr = {2, 4, 6, 8, 10};
+        int target = 12;
+        
+        boolean pairSumPresent = isPairSumPresent(arr, target);
+        
+        if (pairSumPresent) {
+            System.out.println("Pair with sum " + target + " is present.");
+        } else {
+           
